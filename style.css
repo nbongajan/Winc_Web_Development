@@ -1,0 +1,89 @@
+body {
+   background: white;
+ }
+
+ .nav-main {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+ }
+
+ .menu-btn {
+   width: 60px;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0);
+   background-image: url("img/menu.png");
+   background-repeat: no-repeat;
+   background-size: 50%;
+   background-position: center;
+   cursor: pointer;
+ }
+
+ .menu-btn:hover {
+   opacity: 0.8;
+}
+
+.nav-sidebar {
+   width: 50px;
+   height: calc(100vh-60px);
+   padding: 0 5px;
+   background-color: rgba(0, 0, 0, 0);
+   z-index: 1000;
+   position: fixed;
+   left: 0;
+   top: 60px;
+   transition: width 0.3s ease-in-out;
+}
+
+.nav-sidebar ul {
+   padding-top: 15px;
+   overflow: hidden;
+   visibility: hidden;
+}
+
+.nav-sidebar ul li {
+   line-height: 60px;
+   list-style: none;
+}
+
+.nav-sidebar ul li a {
+   display: block;
+   height: 60px;
+   padding: 0 10px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 16;
+   white-space: nowrap;
+   opacity: 1;
+   transition: width 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover {
+   opacity: 0.8;
+}
+
+#color1 {
+   background-color: lightgreen;
+}
+
+#color2 {
+   background-color: rgb(112, 64, 0);
+}
+
+#color3 {
+   background-color: yellow;
+}
+
+#color4 {
+   background-color: darkred;
+}
+#color5 {
+   background-color: palevioletred;
+}
